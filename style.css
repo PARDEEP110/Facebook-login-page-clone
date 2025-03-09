@@ -10,7 +10,9 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     background-color: #d5d7db;
 }
-
+.websiteicon{
+    border-radius: 50px;
+}
 .container {
     width: 100lvw;
     height: 80svh;
@@ -150,21 +152,24 @@ hr {
     position: relative;
     top: 60px;
 }
-
+.recponsive-logos{
+    display: none;
+}
 
 /* this is for link bar at the bottome or footer. */
 
 
-/* .footer{
-    
+.footer{
     width: 100vw;
-    display: flex;
-    justify-content: flex-start;
-    }                     */
+   position: absolute;
+   bottom: 0px;
+   
+    }                    
 .link-bar {
     padding: 10px;
     font-size: 13px;
     display: flex;
+    flex-wrap: wrap;
     margin-top: 15px;
     width: 70vw;
     border-bottom: 1px solid grey;
@@ -192,6 +197,8 @@ hr {
        width: 300px;
  }
     .login-page{
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
         margin-bottom: 20px;
         margin-top: 20px;
@@ -211,14 +218,22 @@ hr {
     }
     .link-bar{
     height: 10vh;
-    width: 80vw;
+    width: 100vw;
     flex-shrink: 22;
     }
     hr{
         width: 210px;
     }
-    .moto{
-        width: 200px;
+    .lan{
+        font-size: 10px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .recponsive-logo-container{
+        background-image: url(facebook-icon.png);
+        height: 80px;
+        border-radius: 50px;
+        z-index: 10;
     }
 }
 
